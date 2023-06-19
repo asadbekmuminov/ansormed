@@ -1,0 +1,254 @@
+/* open-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/open-sans-v35-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* open-sans-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/open-sans-v35-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*:focus {
+  outline: 2px dotted aqua;
+  outline-offset: 5px;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  color: #444444;
+  font-family: "Open Sans", sans-serif;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 100%;
+  max-width: 120rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+/* HEADER START */
+
+.header {
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
+}
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site_logo {
+}
+.site_logo_image {
+}
+.sitenav {
+}
+.sitenav_list {
+  display: flex;
+}
+.sitenav_list_item:not(:last-child) {
+  margin-right: 3.2rem;
+}
+.sitenav_link {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  color: #222222;
+  font-weight: 700;
+  position: relative;
+}
+.sitenav_link::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 3px;
+  background: aqua;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  transition: 0.3s;
+}
+.sitenav_link:hover::after {
+  width: 100%;
+}
+.qabulga_yozilish_button {
+  background-color: #de2e54;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 8px;
+  padding: 1.2rem 2.4rem;
+}
+
+/* HEADER END */
+
+/* MAIN START */
+/* HERO START */
+.hero {
+  background-color: #0eb4c1;
+  padding-top: 2.9rem;
+  margin-bottom: 12rem;
+}
+.hero_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero_info {
+  width: 50rem;
+}
+
+.herosection_title {
+  color: white;
+  font-size: 3.6rem;
+  margin-bottom: 1.6rem;
+}
+.description_box {
+  width: 44rem;
+}
+.herosection_description {
+  color: white;
+  font-size: 1.8rem;
+  margin-bottom: 3.6rem;
+}
+.qabulga_yozilish_button {
+}
+.herosection_image {
+}
+/* HERO END */
+
+/* SERVICES START */
+.services {
+}
+.services_container {
+}
+
+.services_title {
+  margin-bottom: 5.6rem;
+  text-align: center;
+  font-size: 3.6rem;
+  color: #000000;
+}
+.servicses_list {
+  margin-bottom: 7.2rem;
+}
+.services_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+.services_info {
+  width: 60rem;
+  margin-left: 6.4rem;
+}
+.services_image {
+  border-radius: 2.4rem;
+}
+.servicestitle_item {
+  margin-bottom: 2.4rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #222222;
+}
+.servicesitem_descriotion {
+  font-weight: 400;
+}
+.services_button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12rem;
+}
+/* SERVICES END */
+
+/* CONTACT START */
+
+.contact {
+  background-color: #0eb4c1;
+}
+.contact_container {
+}
+.contact_title {
+  text-align: center;
+  margin-bottom: 5.2rem;
+  padding-top: 6.4rem;
+  font-size: 3.6rem;
+  color: white;
+}
+.services_contact_list {
+}
+.contact_type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 6.4rem;
+}
+.services_contact_item:not(:last-child) {
+  margin-right: 8.8rem;
+}
+.contact_link {
+  color: white;
+  border: 2px solid white;
+  padding: 1.2rem 2.4rem;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+/* CONTACT END */
+
+/* MAIN END */
+
+/* FOOTER START */
+.footer {
+  background-color: #222222;
+}
+.footer_container {
+  padding: 2.4rem 0rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_logo {
+}
+.footerlogo_image {
+}
+.footernav_list {
+  display: flex;
+  align-items: center;
+}
+.footernav_item:not(:last-child) {
+  margin-right: 3.2rem;
+}
+.footernav_link {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+.fa-solid {
+  position: fixed;
+  width: 25px;
+  height: 25px;
+}
+/* FOOTER END */
